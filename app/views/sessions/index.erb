@@ -1,0 +1,6 @@
+
+<%= params.inspect %>
+<%= @profile.inspect %>
+<% @friends[1..10].each do |x| %>
+  <li><%= x["name"] %> <%= x["id"] %> <img src="<%= @graph.get_picture(x["id"]) %>"/> <br>
+  <% end %>
